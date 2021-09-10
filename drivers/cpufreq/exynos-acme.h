@@ -58,6 +58,10 @@ struct exynos_cpufreq_domain {
 
 	unsigned int			max_freq;
 	unsigned int			min_freq;
+#ifdef CONFIG_ARM_MODCLOCK
+	unsigned int			max_usable_freq;
+	unsigned int			min_usable_freq;
+#endif
 	unsigned int			boot_freq;
 	unsigned int			resume_freq;
 	unsigned int			old;
