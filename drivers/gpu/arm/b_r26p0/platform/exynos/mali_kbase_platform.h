@@ -129,6 +129,7 @@ typedef enum {
 	GPU_HARD_STOP,
 	GPU_RESET,
 	GPU_EXCEPTION_LIST_END,
+	GPU_MIN_CLOCK_LIMIT,
 } gpu_excention_type;
 
 typedef struct _gpu_attribute {
@@ -233,6 +234,7 @@ struct exynos_context {
 	int gpu_max_clock;
 	int gpu_max_clock_limit;
 	int gpu_min_clock;
+	int gpu_min_clock_limit;
 	int gpu_dvfs_start_clock;
 	int gpu_dvfs_config_clock;
 	int user_max_lock_input;
